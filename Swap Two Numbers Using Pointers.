@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int x,y,z;
+    int *ptr1 =&x,*ptr2=&y,*ptr3=&z;
+    scanf("%d %d",ptr1,ptr2);
+    *ptr3=*ptr1;
+    *ptr1=*ptr2;
+    *ptr2=*ptr3;
+    printf("%d %d",x,y);
+    return 0;
+}
