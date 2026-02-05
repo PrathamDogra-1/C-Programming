@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,num,largest,smallest;
+    scanf("%d\n",&n);
+    int list[n];
+    for(int i=1;i<=n;i++){
+        scanf("%d",&list[i]);
+    }
+    largest=list[1];
+    smallest=largest;
+    for(int a=1;a<=n;a++){
+        if(list[a]>largest){
+            largest=list[a];
+        }
+    }
+    for(int b=1;b<=n;b++){
+        if(smallest>list[b]){
+            smallest=list[b];
+        }
+    }
+    printf("%d ",smallest);
+    printf("%d",largest);
+    return 0;
+}
