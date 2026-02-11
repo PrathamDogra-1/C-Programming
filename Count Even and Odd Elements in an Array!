@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,temp,counteven=0,countodd=0;
+    scanf("%d\n",&n);
+    int list[n];
+    for(int i=1;i<=n;i++){
+        scanf("%d",&list[i]);
+    }
+    for(int a=1;a<=n;a++){
+        temp=list[a];
+        if(temp%2==0){
+            counteven+=1;
+        }
+        else{
+            countodd+=1;
+        }
+    }
+    printf("%d ",counteven);
+    printf("%d",countodd);
+    
+    return 0;
+}
